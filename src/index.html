@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/libs/resset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br>
+    <form class="sheet1-container" action="" validate="validate">
+        <div class="sheet1-input-grid-cotnainer">
+            <div class="loginpassword">
+                <div class="grid-field1">
+                    <label class="field1-input-text" for="username">
+                        Input Label
+                    </label>
+                    <input class="inputfield1" 
+                        type="text" 
+                        name="username" 
+                        placeholder="Placeholder Text" 
+                        required="required"
+                    >
+                </div>
+                <div class="field2">
+                    <label class="field2-input-text" for="username">
+                        Password
+                    </label>
+                    <input class="inputfield2" 
+                        type="password" 
+                        name="username" 
+                        placeholder="Password" 
+                        required="required"
+                    >
+                </div>
+            </div>
+            <div class="subsribe-radio">
+                <input class="subscribe-checkbox" 
+                    type="checkbox" 
+                    name="subscribe_check"
+                >
+                <label for="">
+                   <span>
+                        Subscribe to News
+                    </span> 
+                </label>
+            </div>
+            <button class="signin" type="submit">
+                Sign In
+            </button>
+            <p class="forgot">Forgot your password?</p>
+            <hr class="horizontal-row"/>
+            <div class="continue-with">
+                <p>
+                    <span class="continue-with-text">
+                        or continue with
+                    </span>
+                </p>
+                <div class="logo-container">
+                    <div class="logo1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="24" height="24" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_714_3411" transform="scale(0.0140845)"/>
+                            </pattern>
+                            <image id="image0_714_3411" width="272" height="92" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                        </svg>                            
+                    </div>
+                    <div class="logo2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM15.72 4.92V7.16426H14.1256C13.3814 7.16426 13.08 7.8 13.08 8.28V9.96H15.6L15.24 12.48H13.08V19.0466H10.5512V12.5291H8.4V9.96H10.56V8.04C10.56 6.20491 11.6059 4.8 13.92 4.8H15.72L15.72 4.92Z" fill="white"/>
+                        </svg>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br><br><br><br>
+    <section class="sheet2-bigcontainer">
+        <form class="sheet2-container" action="" validate="validate">
+            <div class="sheet2-input-gridcotnainer">
+                <div class="sheet2-grid-header"><span class="roboto500">Contact Us</span></div>
+                    <div class="grid-field3">
+                        <label class="field3-input-text" for="username">
+                            Input Label
+                        </label>
+                        <input class="inputfield3" 
+                            type="text" 
+                            name="username" 
+                            placeholder="Placeholder Text" 
+                            required="required"
+                        >
+                    </div>
+                    <div class="grid-field3">
+                        <label class="field3-input-text" for="username">
+                            Input Label
+                        </label>
+                        <input class="inputfield3" 
+                            type="text" 
+                            name="username" 
+                            placeholder="Placeholder Text" 
+                            required="required"
+                        >
+                    </div>
+                    <div class="grid-field3">
+                        <label class="field3-input-text" for="username">
+                            Input Label
+                        </label>
+                        <input class="inputfield3" 
+                            type="text" 
+                            name="username" 
+                            placeholder="Placeholder Text" 
+                            required="required"
+                        >
+                    </div>
+                    <div class="grid-field3">
+                        <label class="field3-input-text" for="username">
+                            Input Label
+                        </label>
+                        <input class="inputfield3" 
+                            type="text" 
+                            name="username" 
+                            placeholder="Placeholder Text" 
+                            required="required"
+                        >
+                    </div>
+                    <div class="subsribe-radio2">
+                        <input class="subscribe-checkbox2" type="checkbox" name="subscribe_check">
+                        <label for="">
+                            <span>
+                                Subscribe to News
+                            </span> 
+                        </label>
+                    </div>
+                    <div class="grid-field4">
+                        <label class="field3-input-text" for="username">
+                            Text Area Label
+                        </label>
+                        <input class="inputfield4" 
+                            type="text" 
+                            name="username" 
+                            placeholder="Placeholder Text" 
+                            required="required"
+                        >
+                    </div>
+                    <button class="btn1" type="submit" onclick="alert('This is button!')">Submit</button>
+                </div> 
+            </div>
+        </form>
+    </section>
+    <br><br><br><br>
+    <section class="sheet3-bigcontainer">
+        <form class="sheet3-container" action="" validate="validate">
+            <div class="sheet3-input-gridcotnainer">
+                <div class="sheet32-input-gridcotnainer">
+                    <div class="blue-container">
+                        <h>Contact Information</h>
+                        <h>Here’s some additional support text to help set user expectations.</h>
+                        <div class="telephoneandemail-container">
+                            <div class="telephone">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3333 14.0999V16.5999C18.3343 16.832 18.2867 17.0617 18.1937 17.2744C18.1008 17.487 17.9644 17.6779 17.7934 17.8348C17.6224 17.9917 17.4205 18.1112 17.2006 18.1855C16.9808 18.2599 16.7478 18.2875 16.5167 18.2666C13.9523 17.988 11.4892 17.1117 9.32498 15.7083C7.31151 14.4288 5.60443 12.7217 4.32499 10.7083C2.91663 8.53426 2.04019 6.05908 1.76665 3.48325C1.74583 3.25281 1.77321 3.02055 1.84707 2.80127C1.92092 2.58199 2.03963 2.38049 2.19562 2.2096C2.35162 2.03871 2.54149 1.90218 2.75314 1.80869C2.9648 1.7152 3.1936 1.6668 3.42499 1.66658H5.92498C6.32941 1.6626 6.72148 1.80582 7.02812 2.06953C7.33476 2.33324 7.53505 2.69946 7.59165 3.09992C7.69717 3.89997 7.89286 4.68552 8.17499 5.44158C8.2871 5.73985 8.31137 6.06401 8.24491 6.37565C8.17844 6.68729 8.02404 6.97334 7.79998 7.19992L6.74165 8.25825C7.92795 10.3445 9.65536 12.072 11.7417 13.2583L12.8 12.1999C13.0266 11.9759 13.3126 11.8215 13.6243 11.755C13.9359 11.6885 14.26 11.7128 14.5583 11.8249C15.3144 12.107 16.0999 12.3027 16.9 12.4083C17.3048 12.4654 17.6745 12.6693 17.9388 12.9812C18.203 13.2931 18.3435 13.6912 18.3333 14.0999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                123-456-7890
+                            </div>
+                            <div class="email">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81535 4.58333C2.93822 4.43143 3.12572 4.33325 3.33338 4.33325H16.6667C16.8744 4.33325 17.0619 4.43143 17.1847 4.58333L10 9.61262L2.81535 4.58333ZM0.666771 4.982C0.6666 4.99207 0.66658 5.00213 0.666712 5.01219V14.9999C0.666712 16.4689 1.86443 17.6666 3.33338 17.6666H16.6667C18.1357 17.6666 19.3334 16.4689 19.3334 14.9999V5.0122C19.3335 5.00213 19.3335 4.99206 19.3333 4.98198C19.3236 3.52123 18.1297 2.33325 16.6667 2.33325H3.33338C1.8704 2.33325 0.676464 3.52124 0.666771 4.982ZM17.3334 6.9206V14.9999C17.3334 15.3643 17.0311 15.6666 16.6667 15.6666H3.33338C2.969 15.6666 2.66671 15.3643 2.66671 14.9999V6.92059L9.42658 11.6525C9.7709 11.8935 10.2292 11.8935 10.5735 11.6525L17.3334 6.9206Z" fill="white"/>
+                                </svg>
+                                support@minerva.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet3-input-gridcotnainer2">
+                        <span class="sheet3-roboto500">
+                            Contact Us
+                        </span>
+                        <div class="grid-field3">
+                            <label class="field3-input-text" for="username">
+                                Input Label
+                            </label>
+                            <input class="inputfield3" 
+                                type="text" 
+                                name="username" 
+                                placeholder="Placeholder Text" 
+                                required="required"
+                            >
+                        </div>
+                        <div class="grid-field3">
+                            <label class="field3-input-text" for="username">
+                                Input Label
+                            </label>
+                            <input class="inputfield3" 
+                                type="text" 
+                                name="username" 
+                                placeholder="Placeholder Text" 
+                                required="required"
+                            >
+                        </div>
+                        <div class="grid-field3">
+                            <label class="field3-input-text" for="username">
+                                Input Label
+                            </label>
+                            <input class="inputfield3" 
+                                type="text" 
+                                name="username" 
+                                placeholder="Placeholder Text" 
+                                required="required"
+                            >
+                        </div>
+                        <div class="grid-field3">
+                            <label class="field3-input-text" for="username">
+                                Input Label
+                            </label>
+                            <input class="inputfield3" 
+                                type="text" 
+                                name="username" 
+                                placeholder="Placeholder Text"
+                                required="required"
+                            >
+                        </div>
+                        <div class="subsribe-radio3">
+                            <input class="subscribe-checkbox3" 
+                                type="checkbox" 
+                                name="subscribe_check" 
+                            >
+                            <label for="username">
+                                <span>
+                                    Subscribe to News
+                                </span> 
+                            </label>
+                        </div>
+                        <div class="grid-field4">
+                            <label class="field3-input-text" for="username">
+                                Text Area Label
+                            </label>
+                            <input class="inputfield4" 
+                                type="text" 
+                                name="username" 
+                                placeholder="Placeholder Text" 
+                                required="required"
+                            >
+                        </div>
+                        <button class="btn1" type="submit" onclick="alert('This is button!')">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <br><br><br><br>
+    <section>
+        <form class="sheet4-input-gridcotnainer" action="" validate="validate">
+            <h class="checkout">Checkout</h>
+            <div class="orderdetails">
+                <div class ="order">
+                    <div>
+                        <p>
+                            Your order
+                        </p>
+                    </div>
+                </div> 
+                <div class="orderinfo">
+                    <span class="productname">Eggshell Plant Pot</span> 
+                    <div class="privet">
+                        <div>
+                            Size: Medium  
+                        </div>
+                        <div>
+                            Qty: 1
+                        </div>
+                        <div>
+                            $25.00
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <hr class="sheet4-row"></hr>
+            <div class="deliverydetails">
+                <div class ="delivery"> 
+                    <div> 
+                        <p>
+                            Delivery Details
+                        </p>
+                    </div>
+                </div> 
+                <div class="deliveryinfo">
+                    <p>
+                        <span class="personname">
+                            Adam Sandler
+                        </span> 
+                        <br>
+                        1234 Fake St
+                        <br>
+                        Milwaukee, WI 53203
+                    </p>
+                </div>
+                <div class="shippinginfo">
+                    <p>
+                        <span class="shippingspeed">
+                            Shipping Speed
+                        </span> 
+                        <br>
+                        $7.00 No Rush Shipping
+                        <br>
+                        Arrives by 1/16/22
+                    </p>
+                </div>
+            </div>
+            <h class="payment">Payment Method</h>
+            <div class="inputinfo">
+                <div class="grid-field3">
+                    <label class="field3-input-text" for="username">
+                        Input Label
+                    </label>
+                    <input class="inputfield3" 
+                        type="text" 
+                        name="username" 
+                        placeholder="Placeholder Text" 
+                        required="required"
+                    >
+                </div>
+            </div>
+            <div class="inputinfo2">
+                <div class="grid-field3">
+                    <label class="field3-input-text" for="username">
+                        Input Label
+                    </label>
+                    <input class="inputfield3"
+                        type="text" 
+                        name="username" 
+                        placeholder="Placeholder Text" 
+                        required="required">
+                </div>
+                <div class="grid-field3">
+                    <label class="field3-input-text" for="username">
+                        Input Label
+                    </label>
+                    <input class="inputfield3" 
+                        type="text" 
+                        name="username" 
+                        placeholder="Placeholder Text" 
+                        required="required"
+                    >
+                </div>
+            </div>
+            <button class="btn2" type="submit" onclick="alert('This is button!')">Continue</button>
+        </form>
+    </section>
+    <br><br><br><br>
+</body>
+</html>
+
+
