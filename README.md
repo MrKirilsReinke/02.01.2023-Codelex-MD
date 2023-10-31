@@ -1,8 +1,8 @@
-# HTML/CSS
+# HTML/CSS, Inputs-Forms
 
 ## Description
 
-This project appears to be a simple and straightforward example of a web form interface. It includes forms for signing in, contacting support, and a checkout process, each with a unique design. The design utilizes modern web development techniques and styling, with attention to user interface elements like buttons, labels, checkboxes, and links. The project serves as a template for creating web forms.
+This is a simple and straightforward example of a web form interface. It includes forms for signing in, contacting support, and a checkout process, each with a unique design. The design utilizes modern web development techniques and styling, with attention to user interface elements like buttons, labels, checkboxes, and links. The project serves as a template for creating web forms.
 
 ## Table of Contents
 
