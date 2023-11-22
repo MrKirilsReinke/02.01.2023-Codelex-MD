@@ -10,7 +10,6 @@ This is a simple and straightforward example of a web form interface. It include
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
 - [Features](#features)
 - [How to Contribute](#how-to-contribute)
 
